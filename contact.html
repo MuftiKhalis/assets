@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact - Mufti Khalis</title>
+  <meta name="description" content="Contact Mufti Khalis.">
+  <meta name="theme-color" content="#f2f5ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1a14" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        Mufti Khalis
+      </a>
+      <div class="header-end">
+        <nav aria-label="Primary">
+          <ul class="nav-inline">
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="english.html">English</a></li>
+          <li><a href="contact.html" aria-current="page">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="scrim" id="scrim"></div>
+  <nav class="drawer" id="menu-panel" aria-label="All pages">
+    <div class="drawer-top"><button class="btn btn-quiet" id="menu-close" type="button">Close</button></div>
+    <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html" aria-current="page">Contact</a></li>
+            <li><a href="english.html">English</a></li>
+          </ul>
+          <h2>Tools</h2>
+          <ul>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="clock.html">Clock</a></li>
+            <li><a href="tic_tac_toe.html">Tic Tac Toe</a></li>
+          </ul>
+  </nav>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Contact</h1>
+        <p>Send me a message with the form below.</p>
+      </div>
+
+      <form class="form" id="contact-form" data-endpoint="" novalidate>
+        <div class="field">
+          <label for="c-name">Name</label>
+          <input class="input" id="c-name" name="name" type="text" autocomplete="name" required>
+        </div>
+        <div class="field">
+          <label for="c-email">Email</label>
+          <input class="input" id="c-email" name="email" type="email" autocomplete="email" required>
+        </div>
+        <div class="field">
+          <label for="c-message">Message</label>
+          <textarea class="input" id="c-message" name="message" rows="6" required></textarea>
+        </div>
+        <div>
+          <button class="btn" type="submit">Send message</button>
+        </div>
+        <p class="form-status" id="form-status" role="status"></p>
+      </form>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">&copy; 2024–2026 Mufti Khalis</div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+  <script src="assets/contact.js" defer></script>
+</body>
+</html>

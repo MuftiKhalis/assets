@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Blog - Mufti Khalis</title>
+  <meta name="description" content="Notes and write-ups by Mufti Khalis.">
+  <meta name="theme-color" content="#f2f5ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1a14" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        Mufti Khalis
+      </a>
+      <div class="header-end">
+        <nav aria-label="Primary">
+          <ul class="nav-inline">
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html" aria-current="page">Blog</a></li>
+          <li><a href="english.html">English</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="scrim" id="scrim"></div>
+  <nav class="drawer" id="menu-panel" aria-label="All pages">
+    <div class="drawer-top"><button class="btn btn-quiet" id="menu-close" type="button">Close</button></div>
+    <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html" aria-current="page">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="english.html">English</a></li>
+          </ul>
+          <h2>Tools</h2>
+          <ul>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="clock.html">Clock</a></li>
+            <li><a href="tic_tac_toe.html">Tic Tac Toe</a></li>
+          </ul>
+  </nav>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="page-head">
+        <h1>Blog</h1>
+        <p>Notes and write-ups.</p>
+      </div>
+
+      <div class="empty">
+        <h2>No posts yet</h2>
+        <p>New posts will appear on this page.</p>
+      </div>
+      <!--
+        To add a post, place an <article> here, for example:
+        <article class="post">
+          <h2><a href="posts/my-post.html">Post title</a></h2>
+          <p>Short summary.</p>
+        </article>
+      -->
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">&copy; 2024–2026 Mufti Khalis</div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+</body>
+</html>

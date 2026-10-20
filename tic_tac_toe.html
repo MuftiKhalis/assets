@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tic Tac Toe - Mufti Khalis</title>
+  <meta name="description" content="Play Tic Tac Toe against the computer at five levels, or against a friend.">
+  <meta name="theme-color" content="#f2f5ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1a14" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        Mufti Khalis
+      </a>
+      <div class="header-end">
+        <nav aria-label="Primary">
+          <ul class="nav-inline">
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="english.html">English</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="scrim" id="scrim"></div>
+  <nav class="drawer" id="menu-panel" aria-label="All pages">
+    <div class="drawer-top"><button class="btn btn-quiet" id="menu-close" type="button">Close</button></div>
+    <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="english.html">English</a></li>
+          </ul>
+          <h2>Tools</h2>
+          <ul>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="clock.html">Clock</a></li>
+            <li><a href="tic_tac_toe.html" aria-current="page">Tic Tac Toe</a></li>
+          </ul>
+  </nav>
+
+  <main id="main">
+    <div class="wrap">
+      <div class="tool">
+        <div class="page-head">
+          <h1>Tic Tac Toe</h1>
+          <p>Play the computer at five levels, or take turns with a friend. You play X.</p>
+        </div>
+        <div class="panel">
+          <div class="ttt-options">
+            <div class="field">
+              <label for="mode-select">Mode</label>
+              <select class="select" id="mode-select">
+                <option value="pvai">Player vs AI</option>
+                <option value="pvp">Player vs Player</option>
+              </select>
+            </div>
+            <div id="pvai-options">
+              <div class="field">
+                <label for="level-select">AI level</label>
+                <select class="select" id="level-select">
+                  <option value="easy">Easy</option>
+                  <option value="medium">Medium</option>
+                  <option value="hard">Hard</option>
+                  <option value="expert">Expert</option>
+                  <option value="impossible">Impossible</option>
+                </select>
+              </div>
+              <div class="field">
+                <label for="first-move-select">First move</label>
+                <select class="select" id="first-move-select">
+                  <option value="player">Player first</option>
+                  <option value="ai">AI first</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="board" id="board" role="group" aria-label="Game board">
+            <button class="cell" type="button" data-index="0"></button>
+            <button class="cell" type="button" data-index="1"></button>
+            <button class="cell" type="button" data-index="2"></button>
+            <button class="cell" type="button" data-index="3"></button>
+            <button class="cell" type="button" data-index="4"></button>
+            <button class="cell" type="button" data-index="5"></button>
+            <button class="cell" type="button" data-index="6"></button>
+            <button class="cell" type="button" data-index="7"></button>
+            <button class="cell" type="button" data-index="8"></button>
+          </div>
+          <div class="ttt-foot">
+            <p class="ttt-status" id="ttt-status" role="status"></p>
+            <button class="btn btn-quiet" id="ttt-reset" type="button">Restart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">&copy; 2024–2026 Mufti Khalis</div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+  <script src="assets/tictactoe.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Home - Mufti Khalis</title>
+  <meta name="description" content="Mufti Khalis, biology graduate in Banda Aceh. Remote sensing and NDVI work, small web tools and English study links.">
+  <meta name="theme-color" content="#f2f5ee" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0e1a14" media="(prefers-color-scheme: dark)">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500..800&family=Instrument+Sans:wght@400..700&display=swap">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="wrap">
+      <a class="brand" href="index.html">
+        <span class="mark" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span><span></span></span>
+        Mufti Khalis
+      </a>
+      <div class="header-end">
+        <nav aria-label="Primary">
+          <ul class="nav-inline">
+          <li><a href="about.html">About</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="english.html">English</a></li>
+          <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </nav>
+        <button class="menu-btn" id="menu-btn" type="button" aria-expanded="false" aria-controls="menu-panel">Menu</button>
+      </div>
+    </div>
+  </header>
+
+  <div class="scrim" id="scrim"></div>
+  <nav class="drawer" id="menu-panel" aria-label="All pages">
+    <div class="drawer-top"><button class="btn btn-quiet" id="menu-close" type="button">Close</button></div>
+    <h2>Pages</h2>
+          <ul>
+            <li><a href="index.html" aria-current="page">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="english.html">English</a></li>
+          </ul>
+          <h2>Tools</h2>
+          <ul>
+            <li><a href="calendar.html">Calendar</a></li>
+            <li><a href="calculator.html">Calculator</a></li>
+            <li><a href="clock.html">Clock</a></li>
+            <li><a href="tic_tac_toe.html">Tic Tac Toe</a></li>
+          </ul>
+  </nav>
+
+  <main id="main">
+    <div class="wrap">
+      <section class="hero">
+        <div class="hero-text">
+          <h1>Reading vegetation from space, one 10-metre pixel at a time.</h1>
+          <p>I&rsquo;m Mufti Khalis, a biology graduate from Universitas Syiah Kuala in Banda Aceh. This site holds my remote sensing work, a few small tools, and English study links.</p>
+        </div>
+
+        <figure class="raster">
+          <div class="raster-stage" id="raster-stage">
+            <canvas id="raster-canvas" role="img" aria-label="Illustrative NDVI raster showing a river, patches of dense vegetation and a built-up area."></canvas>
+            <div class="raster-cursor" id="raster-cursor"></div>
+          </div>
+          <div class="raster-readout" aria-hidden="true">
+            <strong id="raster-val">NDVI</strong>
+            <span id="raster-class">Point at a pixel to read its NDVI.</span>
+          </div>
+          <div class="raster-legend"></div>
+          <div class="raster-scale"><span>&minus;0.2</span><span>0.9</span></div>
+          <figcaption>Illustrative raster generated in your browser, not real imagery. Each square stands for one 10&nbsp;m Sentinel-2 pixel.</figcaption>
+        </figure>
+      </section>
+
+      <section class="section" aria-labelledby="finding-h">
+        <div class="finding">
+          <div>
+            <h2 id="finding-h">Banda Aceh&rsquo;s vegetation cover fell by one percentage point from 2019 to 2023.</h2>
+            <p>My thesis compared Sentinel-2A imagery from both years using NDVI. Vegetation covered 52% of the city in 2019 and 51% in 2023. Non-vegetation grew from 48% (2,729.27&nbsp;ha) to 49% (2,808.19&nbsp;ha).</p>
+            <p>Vegetation was lowest in the dense city centre and higher where green open space remained.</p>
+            <p><a href="about.html">How the analysis was done</a></p>
+          </div>
+          <div>
+            <dl class="bars">
+              <div class="bar">
+                <dt>2019</dt>
+                <dd role="img" aria-label="2019: vegetation 52%, non-vegetation 48%"><span class="bar-veg" style="width:52%">52%</span><span class="bar-non" style="width:48%">48%</span></dd>
+              </div>
+              <div class="bar">
+                <dt>2023</dt>
+                <dd role="img" aria-label="2023: vegetation 51%, non-vegetation 49%"><span class="bar-veg" style="width:51%">51%</span><span class="bar-non" style="width:49%">49%</span></dd>
+              </div>
+            </dl>
+            <ul class="bars-key">
+              <li>Vegetation</li>
+              <li>Non-vegetation</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="tools-h">
+        <h2 id="tools-h">Small tools</h2>
+        <ul class="index">
+          <li><a href="calendar.html"><span class="name">Calendar</span><span class="what">Count the days from today to any date.</span></a></li>
+          <li><a href="calculator.html"><span class="name">Calculator</span><span class="what">Four operations, with keyboard input.</span></a></li>
+          <li><a href="clock.html"><span class="name">Clock</span><span class="what">Live local time, date, weekday and UTC.</span></a></li>
+          <li><a href="tic_tac_toe.html"><span class="name">Tic Tac Toe</span><span class="what">Play the computer at five levels, or a friend.</span></a></li>
+          <li><a href="english.html"><span class="name">English</span><span class="what">Grammar, TOEFL and IELTS practice, scholarship and eBook links.</span></a></li>
+        </ul>
+      </section>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap">&copy; 2024–2026 Mufti Khalis</div>
+  </footer>
+
+  <script src="assets/site.js" defer></script>
+  <script src="assets/raster.js" defer></script>
+</body>
+</html>
